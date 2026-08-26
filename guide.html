@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>初めての方へ｜美肌専門店 AiRiS 元住吉</title>
+<meta name="description" content="美肌専門店AiRiS(アイリス)が初めての方へ。ご来店から施術までの流れ、よくあるご質問をまとめました。エステが初めての方も、敏感肌の方も、安心してご来店ください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600&family=Shippori+Mincho+B1:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.guide-intro{background:var(--white);}
+.guide-intro .inner{max-width:760px;margin:0 auto;text-align:center;}
+.guide-intro .lead{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:clamp(22px,2.6vw,28px);line-height:2;letter-spacing:.12em;margin-bottom:28px;
+}
+.guide-intro p{font-size:14px;color:var(--ink-light);text-align:left;}
+.flow{background:var(--cream);}
+.flow-steps{max-width:900px;margin:0 auto;}
+.flow-step{
+  display:grid;grid-template-columns:200px 1fr;gap:40px;
+  padding:44px 0;border-bottom:1px solid var(--line);align-items:center;
+}
+.flow-step:last-child{border-bottom:none;}
+.flow-step .ph{border-radius:2px;overflow:hidden;}
+.flow-step .ph img{width:100%;height:150px;object-fit:cover;}
+.flow-step .step-label{
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;letter-spacing:.26em;color:var(--gold);display:block;margin-bottom:8px;
+}
+.flow-step h3{
+  font-family:'Noto Serif JP',serif;font-size:19px;font-weight:500;letter-spacing:.08em;margin-bottom:10px;
+}
+.flow-step p{font-size:13.5px;color:var(--ink-light);}
+.faq{background:var(--white);}
+.faq-list{max-width:820px;margin:0 auto;}
+.faq-item{
+  border-bottom:1px solid var(--line);
+}
+.faq-item summary{
+  list-style:none;cursor:pointer;
+  padding:28px 44px 28px 8px;position:relative;
+  font-family:'Noto Serif JP',serif;
+  font-size:15.5px;letter-spacing:.05em;line-height:1.8;
+  display:flex;gap:18px;align-items:baseline;
+  transition:color .3s;
+}
+.faq-item summary:hover{color:var(--primary);}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::before{
+  content:"Q";font-family:'Cormorant Garamond',serif;
+  color:var(--primary);font-size:20px;flex-shrink:0;
+}
+.faq-item summary::after{
+  content:"+";position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);
+  transition:transform .3s;
+}
+.faq-item[open] summary::after{content:"−";}
+.faq-item .answer{
+  padding:0 8px 30px 46px;font-size:13.5px;color:var(--ink-light);line-height:2.1;
+}
+@media(max-width:900px){
+  .guide-intro .lead{font-size:22px;line-height:1.9;letter-spacing:.06em;margin-bottom:20px;}
+  .guide-intro p{font-size:13.5px;line-height:2.05;}
+  /* 流れは縦線でつないで順序を見せる */
+  .flow-steps{position:relative;padding-left:26px;}
+  .flow-steps::before{
+    content:"";position:absolute;left:3px;top:14px;bottom:14px;
+    width:1px;background:var(--primary);opacity:.3;
+  }
+  .flow-step{
+    grid-template-columns:1fr;gap:16px;padding:26px 0;position:relative;
+  }
+  .flow-step::before{
+    content:"";position:absolute;left:-27px;top:32px;
+    width:7px;height:7px;border-radius:50%;background:var(--primary);
+  }
+  .flow-step .ph img{height:42vw;min-height:160px;}
+  .flow-step .step-label{font-size:11px;letter-spacing:.2em;margin-bottom:6px;}
+  .flow-step h3{font-size:17px;margin-bottom:8px;}
+  .flow-step p{font-size:13px;line-height:2;}
+  /* FAQ — 質問は開閉ボタン分の余白を確保し、答えは幅いっぱいに読ませる */
+  .faq-item summary{
+    font-size:14.5px;padding:20px 34px 20px 2px;gap:11px;line-height:1.8;
+  }
+  .faq-item summary::before{font-size:17px;}
+  .faq-item summary::after{
+    right:4px;font-size:18px;width:20px;text-align:center;
+  }
+  .faq-item .answer{
+    padding:0 2px 24px 2px;font-size:13px;line-height:2.05;
+    color:var(--ink);opacity:.78;
+  }
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo"><img src="assets/img/logo.png" alt="美肌専門店 AiRiS"></a>
+    <nav class="pc-nav">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">AiRiSについて</a>
+      <a href="menu.html">メニュー・料金</a>
+      <a href="guide.html" class="current">初めての方へ</a>
+      <a href="access.html">アクセス</a>
+      <a class="btn-reserve" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">ご予約はこちら</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="sp-nav" id="spNav">
+  <a href="index.html">ホーム</a>
+  <a href="about.html">AiRiSについて</a>
+  <a href="menu.html">メニュー・料金</a>
+  <a href="guide.html">初めての方へ</a>
+  <a href="access.html">アクセス</a>
+  <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">ご予約はこちら</a>
+</nav>
+
+<div class="page-hero" data-en="Guide">
+  <div class="wrap">
+    <div class="en-title">Guide</div>
+    <div class="ja-title">初めての方へ</div>
+    <div class="breadcrumb"><a href="index.html">ホーム</a><span>/</span>初めての方へ</div>
+  </div>
+</div>
+
+<!-- 導入 -->
+<section class="guide-intro">
+  <div class="wrap">
+    <div class="inner fade">
+      <p class="lead">エステが初めてでも、<br>大丈夫です。</p>
+      <p>AiRiSにご来店いただくお客様の多くが、「エステは初めて」「勧誘が不安だった」という方です。当店では無理なコースのご案内は一切していません。カウンセリングで肌状態を確認したうえで、必要な施術だけを正直にお伝えします。アトピー肌や敏感肌の方も、まずはご相談ください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 流れ -->
+<section class="flow">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Flow</div>
+      <div class="ja-title">ご来店から施術までの流れ</div>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step fade">
+        <div class="ph"><img src="assets/img/counseling_close.jpg" alt="カウンセリング"></div>
+        <div>
+          <span class="step-label">COUNSELING</span>
+          <h3>カウンセリング</h3>
+          <p>肌状態やお悩み、その日の体調まで丁寧にお伺いします。気になっていることは何でもお話しください。カウンセリングは無料です。</p>
+        </div>
+      </div>
+      <div class="flow-step fade">
+        <div class="ph"><img src="assets/img/cleansing.jpg" alt="クレンジング"></div>
+        <div>
+          <span class="step-label">CLEANSING</span>
+          <h3>クレンジング</h3>
+          <p>すべてのメニューにクレンジングが含まれています。メイクのままご来店いただいて大丈夫です。</p>
+        </div>
+      </div>
+      <div class="flow-step fade">
+        <div class="ph"><img src="assets/img/herb_peeling.jpg" alt="施術"></div>
+        <div>
+          <span class="step-label">TREATMENT</span>
+          <h3>施術</h3>
+          <p>カウンセリングをもとに、その日のお肌に合わせて施術を組み立てます。施術中もお声がけしながら進めますので、そのままお休みいただいても大丈夫です。</p>
+        </div>
+      </div>
+      <div class="flow-step fade">
+        <div class="ph"><img src="assets/img/pack_pink.jpg" alt="パック・保湿仕上げ"></div>
+        <div>
+          <span class="step-label">FINISHING</span>
+          <h3>パック・保湿仕上げ</h3>
+          <p>肌別の美容成分パックで鎮静し、うるおいを閉じ込めます。仕上がりは鏡でその場でお確かめください。</p>
+        </div>
+      </div>
+      <div class="flow-step fade">
+        <div class="ph"><img src="assets/img/dresser.jpg" alt="アフターカウンセリング"></div>
+        <div>
+          <span class="step-label">AFTER CARE</span>
+          <h3>アフターカウンセリング・お仕度</h3>
+          <p>ご自宅でのケア方法や、次にお越しいただく目安の時期をお伝えします。ライト付きドレッサーのパウダールームで、ゆっくりお仕度ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">FAQ</div>
+      <div class="ja-title">よくあるご質問</div>
+    </div>
+    <div class="faq-list fade">
+      <details class="faq-item">
+        <summary>メイクのままでも大丈夫ですか?</summary>
+        <div class="answer">はい、大丈夫です。すべてのメニューにクレンジングが含まれていますので、メイクのままご来店ください。施術後はパウダールームでメイク直しをしていただけます。</div>
+      </details>
+      <details class="faq-item">
+        <summary>敏感肌でも施術を受けられますか?</summary>
+        <div class="answer">カウンセリングで肌状態を確認し、その日の肌に合わせて施術内容や強さを調整します。肌が敏感な方は、ご予約時やカウンセリングでお気軽にお申し付けください。事前にご相談いただければ、より安心してお受けいただけます。</div>
+      </details>
+      <details class="faq-item">
+        <summary>ダウンタイムはありますか?</summary>
+        <div class="answer">当店のREVIハーブピーリングは剥離を伴わないタイプのため、大きなダウンタイムは基本的にありません。肌質によっては一時的に好転反応が出る場合がありますが、カウンセリングで事前にご説明しますのでご安心ください。</div>
+      </details>
+      <details class="faq-item">
+        <summary>通うペースの目安はありますか?</summary>
+        <div class="answer">肌のターンオーバーに合わせて、月1回ペースでのご来店をおすすめしています。実際に多くのお客様が月1回の肌管理で通われています。お悩みの状態によって最適なペースをご提案しますので、カウンセリングでご相談ください。</div>
+      </details>
+      <details class="faq-item">
+        <summary>勧誘されないか不安です</summary>
+        <div class="answer">当店では回数券や高額コースの無理なご案内は一切行っていません。口コミでも「無理な案内がなく安心できた」というお声を多くいただいています。必要な施術・ホームケアだけを正直にご提案するのがAiRiSのスタイルです。</div>
+      </details>
+      <details class="faq-item">
+        <summary>男性でも利用できますか?</summary>
+        <div class="answer">はい、男性のお客様にもご利用いただいています。完全個室ですので、周りを気にせず施術を受けていただけます。</div>
+      </details>
+      <details class="faq-item">
+        <summary>支払い方法は何が使えますか?</summary>
+        <div class="answer">現金のほか、各種クレジットカード・スマート決済に対応しています。</div>
+      </details>
+      <details class="faq-item">
+        <summary>予約の変更・キャンセルは?</summary>
+        <div class="answer">ご予約の変更・キャンセルは、ホットペッパービューティーの予約ページ、またはInstagramのDMからご連絡ください。お日にちが近い場合は、お早めにご連絡いただけると助かります。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap fade">
+    <div class="en-title">Reservation</div>
+    <p>気になることはご予約の前でもご相談ください。<br>InstagramのDMでもお答えしています。</p>
+    <div class="cta-buttons">
+      <a class="btn-white" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約する</a>
+      <a class="btn-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">LINEで予約・相談</a>
+      <a class="btn-outline-white" href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagram DMで相談</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="AiRiS">
+      <p>美肌専門店 AiRiS(アイリス)<br>
+      神奈川県川崎市中原区木月3-22-3<br>やままんアヴェニュー109号室<br>
+      元住吉駅 徒歩3分／10:00〜20:00(不定休)</p>
+    </div>
+    <div class="footer-col">
+      <h4>MENU</h4>
+      <a href="index.html">ホーム</a>
+      <a href="about.html">AiRiSについて</a>
+      <a href="menu.html">メニュー・料金</a>
+      <a href="guide.html">初めての方へ</a>
+      <a href="access.html">アクセス</a>
+    </div>
+    <div class="footer-col">
+      <h4>RESERVATION</h4>
+      <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約(ホットペッパー)</a>
+      <a class="footer-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">公式LINE</a>
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 美肌専門店 AiRiS All Rights Reserved.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+  <a class="line-float" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">LINEで予約・相談</a>
+</body>
+</html>

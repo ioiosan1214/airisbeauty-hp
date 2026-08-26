@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美肌専門店 AiRiS｜元住吉駅徒歩3分・完全個室のフェイシャルエステ</title>
+<meta name="description" content="元住吉駅徒歩3分、完全個室の美肌専門フェイシャルエステサロンAiRiS(アイリス)。REVIハーブピーリング・毛穴洗浄・水光ピールで、自分史上最高の美肌へ。綺麗は土台から、天然素材でお肌にやさしい肌質改善を。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600&family=Shippori+Mincho+B1:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* ---------- トップ専用: ファーストビュー ---------- */
+.hero{
+  position:relative;height:100svh;min-height:640px;overflow:hidden;
+  display:flex;align-items:center;padding:0;
+}
+.hero-bg{position:absolute;inset:0;z-index:-2;}
+.hero-bg img{
+  width:100%;height:100%;object-fit:cover;object-position:center 40%;
+  animation:heroZoom 18s ease-out forwards;
+}
+@keyframes heroZoom{from{transform:scale(1.12);}to{transform:scale(1);}}
+.hero-veil{
+  position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,
+    rgba(255,255,255,.94) 0%,
+    rgba(255,255,255,.82) 34%,
+    rgba(255,255,255,.35) 62%,
+    rgba(255,255,255,.05) 100%);
+}
+.hero-watermark{
+  position:absolute;right:-1%;bottom:6%;z-index:0;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(120px,17vw,250px);line-height:1;
+  color:#fff;opacity:.5;letter-spacing:.02em;pointer-events:none;
+  mix-blend-mode:overlay;
+}
+.hero-inner{
+  position:relative;z-index:1;
+  max-width:1280px;width:100%;margin:0 auto;padding:76px 6% 0;
+}
+.hero-label{
+  display:flex;align-items:center;gap:16px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:15px;letter-spacing:.3em;color:var(--gold);
+  margin-bottom:30px;
+}
+.hero-label::before{content:"";width:48px;height:1px;background:var(--gold);}
+.hero-catch{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:clamp(34px,4.6vw,60px);
+  font-weight:500;line-height:1.72;letter-spacing:.14em;
+  color:var(--ink);
+}
+.sp-br{display:none;}
+.sp-only{display:none;}
+.hero-catch .accent{color:var(--primary);}
+.hero-sub{
+  margin-top:26px;font-size:14.5px;color:var(--ink);
+  line-height:2.3;letter-spacing:.1em;
+}
+.hero-cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap;}
+.hero-foot{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;
+  background:rgba(255,255,255,.82);backdrop-filter:blur(10px);
+  border-top:1px solid rgba(200,180,140,.25);
+}
+.hero-foot-inner{
+  max-width:1080px;margin:0 auto;padding:20px 24px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.hero-foot .item{display:flex;align-items:baseline;gap:12px;}
+.hero-foot .num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:27px;color:var(--primary);line-height:1;
+  font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;
+}
+.hero-foot .num small{font-size:14px;}
+.hero-foot .label{font-size:11.5px;color:var(--ink-light);letter-spacing:.1em;}
+.scroll-sign{
+  position:absolute;right:38px;bottom:110px;z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.3em;
+  color:var(--ink-light);writing-mode:vertical-rl;
+}
+.scroll-sign::after{
+  content:"";width:1px;height:56px;background:var(--ink-light);
+  animation:scrollLine 2s ease-in-out infinite;transform-origin:top;
+}
+@keyframes scrollLine{0%{transform:scaleY(0);}45%{transform:scaleY(1);}100%{transform:scaleY(1);opacity:0;}}
+
+/* ---------- ニュース帯 ---------- */
+.news-bar{padding:0;background:var(--white);}
+.news-bar .inner{
+  max-width:1080px;margin:0 auto;padding:22px 24px;
+  display:flex;align-items:center;gap:22px;
+  border-bottom:1px solid var(--line);
+}
+.news-bar .tag{
+  font-family:'Cormorant Garamond',serif;
+  color:var(--gold);letter-spacing:.22em;font-size:14px;white-space:nowrap;
+}
+.news-bar a{font-size:13px;color:var(--ink);letter-spacing:.06em;}
+.news-bar a:hover{color:var(--primary);}
+
+/* ---------- コンセプトダイジェスト ---------- */
+.concept-top{background:var(--white);position:relative;overflow:hidden;}
+.concept-top::before{
+  content:"Concept";
+  font-family:'Cormorant Garamond',serif;
+  position:absolute;left:-1%;top:30px;font-size:150px;line-height:1;
+  color:var(--cream);z-index:0;letter-spacing:.04em;
+}
+.concept-grid{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:center;
+}
+.concept-imgs{position:relative;padding:0 0 56px 56px;}
+.concept-imgs .img-main{border-radius:2px;overflow:hidden;}
+.concept-imgs .img-main img{width:100%;height:440px;object-fit:cover;}
+.concept-imgs .img-sub{
+  position:absolute;left:0;bottom:0;width:46%;
+  border:6px solid #fff;border-radius:2px;overflow:hidden;
+  box-shadow:0 18px 40px rgba(60,74,80,.18);
+}
+.concept-copy .lead{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:26px;line-height:2;letter-spacing:.12em;margin-bottom:26px;
+}
+.concept-copy p{color:var(--ink-light);font-size:14px;margin-bottom:16px;}
+.concept-copy .more-link{margin-top:16px;}
+
+/* ---------- 選ばれる理由 — 3枚並びをやめ、高さをずらした紙面に ---------- */
+.reason-top{background:var(--cream);}
+.reason-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:52px;align-items:start;}
+.reason-col:nth-child(2){margin-top:56px;}
+.reason-col:nth-child(3){margin-top:26px;}
+.reason-col .ph{overflow:hidden;border-radius:2px;margin-bottom:26px;}
+.reason-col .ph img{width:100%;height:280px;object-fit:cover;transition:transform .9s;}
+.reason-col:nth-child(2) .ph img{height:230px;}
+.reason-col:nth-child(3) .ph img{height:310px;}
+.reason-col:hover .ph img{transform:scale(1.05);}
+.reason-col .no{
+  font-family:'Cormorant Garamond',serif;
+  font-size:14px;letter-spacing:.26em;color:var(--gold);display:block;margin-bottom:12px;
+}
+.reason-col h3{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:18.5px;font-weight:500;letter-spacing:.06em;line-height:1.85;margin-bottom:14px;
+}
+.reason-col p{font-size:13px;color:var(--ink-light);line-height:2.05;}
+.reason-more{text-align:center;margin-top:64px;}
+
+/* ---------- メニューダイジェスト ---------- */
+.menu-top{background:var(--white);}
+.menu-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.menu-col{background:#fff;padding:0 0 34px;text-align:center;transition:background .4s;}
+.menu-col:hover{background:var(--cream);}
+.menu-col .ph{height:210px;overflow:hidden;margin-bottom:26px;}
+.menu-col .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s;}
+.menu-col:hover .ph img{transform:scale(1.05);}
+.menu-col h3{
+  font-family:'Noto Serif JP',serif;font-size:17px;font-weight:500;letter-spacing:.06em;
+}
+/* 価格は等幅数字の本文書体で。Cormorantは数字が古典様式で読みにくい */
+.menu-col .price{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;
+  color:var(--primary);font-size:18px;font-weight:500;
+  letter-spacing:.01em;margin:7px 0 12px;
+}
+.menu-col .price .yen{font-size:.7em;margin-right:1px;}
+.menu-col .price .tag{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  font-size:10.5px;color:var(--gold);letter-spacing:.12em;
+  margin-right:8px;vertical-align:1px;
+}
+.menu-col p{font-size:12.5px;color:var(--ink-light);padding:0 26px;line-height:1.9;}
+.menu-more{text-align:center;margin-top:56px;}
+
+/* ---------- お客様の声 — カードを並べず、評価と声を一体の紙面に ---------- */
+.voice{background:var(--primary-pale);}
+.voice-inner{
+  max-width:960px;margin:0 auto;
+  display:grid;grid-template-columns:260px 1fr;gap:72px;align-items:start;
+}
+.voice-score{position:sticky;top:110px;}
+.voice-score .num{
+  font-family:'Cormorant Garamond',serif;
+  font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;
+  font-size:76px;line-height:1;color:var(--primary);letter-spacing:.02em;
+}
+.voice-score .stars{color:var(--gold);font-size:14px;letter-spacing:.3em;margin:12px 0 14px;}
+.voice-score .cnt{font-size:12px;color:var(--ink-light);line-height:2;letter-spacing:.06em;}
+.voice-score .src{
+  font-size:11px;color:var(--ink-light);margin-top:18px;padding-top:16px;
+  border-top:1px solid rgba(84,175,196,.3);letter-spacing:.04em;line-height:1.9;
+}
+.voice-list{border-top:1px solid rgba(84,175,196,.28);}
+.voice-item{padding:30px 0;border-bottom:1px solid rgba(84,175,196,.28);}
+.voice-item p{
+  font-family:'Noto Serif JP',serif;
+  font-size:15px;line-height:2.15;letter-spacing:.03em;
+}
+.voice-item p::before{content:"「";}
+.voice-item p::after{content:"」";}
+.voice-item .who{
+  margin-top:12px;font-size:11.5px;color:var(--ink-light);letter-spacing:.1em;
+}
+
+/* ---------- Instagram ---------- */
+.insta{background:var(--white);text-align:center;}
+.insta .handle{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;letter-spacing:.08em;color:var(--ink);margin-bottom:10px;
+}
+.insta p{font-size:13.5px;color:var(--ink-light);margin-bottom:36px;}
+.insta-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+  max-width:860px;margin:0 auto 40px;
+}
+.insta-grid a{overflow:hidden;border-radius:2px;display:block;}
+.insta-grid img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .6s,opacity .4s;}
+.insta-grid a:hover img{transform:scale(1.06);opacity:.85;}
+
+/* ---------- アクセス簡易 ---------- */
+.access-top{background:var(--cream);}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch;}
+.access-map{min-height:340px;border-radius:2px;overflow:hidden;}
+.access-map iframe{width:100%;height:100%;border:0;min-height:340px;}
+
+@media(max-width:900px){
+  .hero{min-height:600px;}
+  .hero-inner{padding:90px 22px 0;}
+  .sp-br{display:inline;}
+  .sp-only{display:inline;}
+  .pc-only{display:none;}
+  .hero-label{
+    font-size:10px;letter-spacing:.18em;gap:10px;margin-bottom:22px;
+  }
+  .hero-label::before{width:26px;}
+  .hero-catch{font-size:26px;letter-spacing:.07em;line-height:1.9;}
+  .hero-sub{font-size:12.5px;line-height:2.05;margin-top:20px;letter-spacing:.02em;}
+  .hero-cta{margin-top:30px;gap:10px;}
+  .hero-cta .btn-main,.hero-cta .btn-ghost{padding:13px 24px;font-size:12.5px;}
+  .hero-watermark{font-size:86px;bottom:15%;opacity:.34;}
+  .scroll-sign{display:none;}
+  /* 実績バーは2×2グリッドで整列させる */
+  .hero-foot-inner{
+    display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;padding:16px 22px;
+  }
+  .hero-foot .item{gap:8px;}
+  .hero-foot .num{font-size:19px;}
+  .hero-foot .num small{font-size:11px;}
+  .hero-foot .label{font-size:10px;letter-spacing:.06em;}
+  .news-bar .inner{padding:18px 22px;gap:14px;flex-wrap:wrap;}
+  .news-bar .tag{font-size:12px;letter-spacing:.16em;}
+  .news-bar a{font-size:12.5px;line-height:1.9;}
+  .concept-top::before{font-size:96px;top:14px;}
+  .concept-grid{grid-template-columns:1fr;gap:36px;}
+  .concept-imgs{padding:0 0 38px 30px;}
+  .concept-imgs .img-main img{height:62vw;min-height:250px;}
+  .concept-copy .lead{font-size:22px;line-height:1.95;margin-bottom:20px;}
+  .concept-copy .lead br{display:none;}
+  .reason-cols{grid-template-columns:1fr;gap:40px;}
+  .reason-col:nth-child(2),.reason-col:nth-child(3){margin-top:0;}
+  .reason-col .ph{margin-bottom:18px;}
+  .reason-col .ph img,
+  .reason-col:nth-child(2) .ph img,
+  .reason-col:nth-child(3) .ph img{height:52vw;min-height:200px;}
+  .reason-col h3{font-size:17px;margin-bottom:10px;}
+  .reason-col h3 br{display:none;}
+  .reason-col p{font-size:12.5px;}
+  .reason-more{margin-top:42px;}
+  /* 口コミ — 評価を上に置き、声を下に流す */
+  .voice-inner{grid-template-columns:1fr;gap:32px;}
+  .voice-score{position:static;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;}
+  .voice-score .num{font-size:52px;}
+  .voice-score .stars{margin:0;font-size:12px;letter-spacing:.24em;}
+  .voice-score .cnt{font-size:11.5px;line-height:1.9;}
+  .voice-score .cnt br{display:none;}
+  .voice-score .src{
+    border-top:none;padding-top:0;margin-top:0;width:100%;font-size:10.5px;
+  }
+  .voice-score .src br{display:none;}
+  .voice-item{padding:24px 0;}
+  .voice-item p{font-size:14px;line-height:2.05;}
+  /* メニューは横スワイプで3枚見せる */
+  .menu-cols{
+    display:flex;gap:12px;background:none;border:none;
+    overflow-x:auto;scroll-snap-type:x mandatory;
+    padding-bottom:8px;margin:0 -22px;padding-left:22px;padding-right:22px;
+    -webkit-overflow-scrolling:touch;
+  }
+  .menu-cols::-webkit-scrollbar{display:none;}
+  .menu-col{
+    flex:0 0 76%;scroll-snap-align:center;
+    border:1px solid var(--line);padding-bottom:28px;
+  }
+  .menu-col .ph{height:180px;margin-bottom:20px;}
+  .menu-col p{padding:0 20px;}
+  .menu-more{margin-top:40px;}
+  .insta-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .insta .handle{font-size:18px;}
+  .insta p{font-size:12.5px;margin-bottom:28px;}
+  .voice-item{padding:30px 24px;}
+  .voice-item p{font-size:13px;}
+  .access-grid{grid-template-columns:1fr;gap:32px;}
+  .access-map,.access-map iframe{min-height:280px;}
+}
+
+/* ---------- イントロアニメーション(水滴×波紋・初回のみ) ---------- */
+#airis-intro{
+  position:fixed;inset:0;z-index:9999;
+  display:grid;place-items:center;overflow:hidden;
+  background:radial-gradient(circle at 50% 42%,
+    #ffffff 0%, #fbfdfe 45%, #eef7f9 78%, #e4f2f5 100%);
+  animation:airisIntroOut .6s ease 2.45s forwards;
+}
+#airis-intro > *{grid-area:1/1;}
+@keyframes airisIntroOut{
+  to{opacity:0;visibility:hidden;pointer-events:none;}
+}
+
+/* 一滴の水(上から落下→着水でつぶれて消える) */
+.airis-drop{
+  width:20px;height:24px;border-radius:50%;
+  background:radial-gradient(circle at 34% 28%,
+    rgba(255,255,255,.95) 0%, rgba(196,231,238,.95) 30%,
+    rgba(84,175,196,.85) 68%, rgba(61,147,168,.95) 100%);
+  box-shadow:0 4px 14px rgba(84,175,196,.35),
+    inset 0 -3px 5px rgba(255,255,255,.45),
+    inset 2px 3px 4px rgba(255,255,255,.6);
+  animation:
+    airisDropFall .7s cubic-bezier(.5,.05,.75,.4) .15s both,
+    airisDropLand .22s ease-out .85s forwards;
+}
+@keyframes airisDropFall{
+  from{transform:translateY(-46vh) scale(.72,1.28);opacity:0;}
+  18%{opacity:1;}
+  to{transform:translateY(0) scale(.9,1.08);opacity:1;}
+}
+@keyframes airisDropLand{
+  from{transform:translateY(0) scale(.9,1.08);opacity:1;}
+  to{transform:translateY(3px) scale(2,.22);opacity:0;}
+}
+
+/* 着水の瞬間の光 */
+.airis-splash{
+  width:110px;height:42px;border-radius:50%;
+  background:radial-gradient(closest-side,
+    rgba(255,255,255,.95) 0%, rgba(140,205,219,.55) 45%, rgba(84,175,196,0) 75%);
+  opacity:0;
+  animation:airisSplash .6s ease-out .85s both;
+}
+@keyframes airisSplash{
+  0%{transform:scale(.25);opacity:0;}
+  12%{opacity:.95;}
+  100%{transform:scale(1.9);opacity:0;}
+}
+
+/* 波紋(同心円が時間差で外側へ) */
+.airis-ripple{
+  width:min(74vmin,540px);height:min(74vmin,540px);
+  border-radius:50%;border:1.5px solid rgba(84,175,196,.55);
+  opacity:0;
+  animation:airisRipple 1.5s cubic-bezier(.16,.84,.44,1) .85s both;
+}
+.airis-ripple.r2{animation-delay:1.02s;border-color:rgba(84,175,196,.35);}
+.airis-ripple.r3{animation-delay:1.2s;border-color:rgba(200,180,140,.5);}
+.airis-ripple.r4{animation-delay:1.38s;border-color:rgba(84,175,196,.25);animation-duration:1.4s;}
+@keyframes airisRipple{
+  0%{transform:scale(.05);opacity:0;}
+  8%{opacity:.9;}
+  100%{transform:scale(1);opacity:0;}
+}
+
+/* ロゴのフェードイン */
+.airis-intro-logo{
+  width:clamp(150px,20vw,200px);height:auto;
+  opacity:0;
+  animation:airisLogoIn .85s ease-out 1.35s both;
+}
+@keyframes airisLogoIn{
+  from{opacity:0;transform:translateY(10px) scale(.97);filter:blur(6px);}
+  to{opacity:1;transform:translateY(0) scale(1);filter:blur(0);}
+}
+
+@media(max-width:900px){
+  .airis-intro-logo{width:148px;}
+  .airis-ripple{width:min(84vmin,420px);height:min(84vmin,420px);}
+}
+
+/* モーション低減設定のユーザーにはイントロを出さない */
+
+</style>
+</head>
+<body>
+
+<!-- イントロアニメーション(初回のみ・sessionStorageで制御) -->
+<div id="airis-intro" aria-hidden="true">
+  <span class="airis-drop"></span>
+  <span class="airis-splash"></span>
+  <span class="airis-ripple r1"></span>
+  <span class="airis-ripple r2"></span>
+  <span class="airis-ripple r3"></span>
+  <span class="airis-ripple r4"></span>
+  <img class="airis-intro-logo" src="assets/img/logo.png" alt="">
+</div>
+<script>
+/* 2回目以降は描画前に即非表示(チラつき防止のため同期実行) */
+(function(){
+  try{
+    if(sessionStorage.getItem('airis_intro_done')){
+      document.getElementById('airis-intro').style.display='none';
+    } else {
+      sessionStorage.setItem('airis_intro_done','1');
+    }
+  }catch(e){}
+})();
+</script>
+
+<header id="header" class="transparent">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo"><img src="assets/img/logo.png" alt="美肌専門店 AiRiS"></a>
+    <nav class="pc-nav">
+      <a href="index.html" class="current">ホーム</a>
+      <a href="about.html">AiRiSについて</a>
+      <a href="menu.html">メニュー・料金</a>
+      <a href="guide.html">初めての方へ</a>
+      <a href="access.html">アクセス</a>
+      <a class="btn-reserve" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">ご予約はこちら</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="sp-nav" id="spNav">
+  <a href="index.html">ホーム</a>
+  <a href="about.html">AiRiSについて</a>
+  <a href="menu.html">メニュー・料金</a>
+  <a href="guide.html">初めての方へ</a>
+  <a href="access.html">アクセス</a>
+  <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">ご予約はこちら</a>
+</nav>
+
+<!-- ファーストビュー -->
+<div class="hero">
+  <div class="hero-bg"><img src="assets/img/hero_room.jpg" alt="AiRiSの完全個室の施術ルーム"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-watermark">AiRiS</div>
+  <div class="hero-inner">
+    <div class="hero-label">PRIVATE SKIN CARE SALON</div>
+    <h1 class="hero-catch">綺麗は、<span class="accent">土台</span>から。<br>自分史上最高の美肌へ。</h1>
+    <p class="hero-sub">
+      <span class="pc-only">元住吉駅 徒歩3分、完全個室の美肌専門フェイシャルサロン。<br>
+      ハーブピーリング × 毛穴洗浄 × 導入ケアで、あなただけの肌管理を。</span>
+      <span class="sp-only">元住吉駅 徒歩3分、完全個室の<br>美肌専門フェイシャルサロン。<br>
+      あなただけの、オーダーメイド肌管理を。</span>
+    </p>
+    <div class="hero-cta">
+      <a class="btn-main" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約する</a>
+      <a class="btn-ghost" href="menu.html">メニューを見る</a>
+    </div>
+  </div>
+  <div class="scroll-sign">SCROLL</div>
+  <div class="hero-foot">
+    <div class="hero-foot-inner">
+      <div class="item"><span class="num">4.75<small> /5.0</small></span><span class="label">口コミ評価 176件</span></div>
+      <div class="item"><span class="num">90<small>%</small></span><span class="label">リピート率</span></div>
+      <div class="item"><span class="num en">Private</span><span class="label">完全個室サロン</span></div>
+      <div class="item"><span class="num">3<small>min</small></span><span class="label">元住吉駅から徒歩</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ニュース帯 -->
+<div class="news-bar">
+  <div class="inner fade">
+    <span class="tag">NEWS</span>
+    <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">おかげさまで開業2周年を迎えました。いつもご来店ありがとうございます</a>
+  </div>
+</div>
+
+<!-- コンセプト -->
+<section class="concept-top" id="concept">
+  <div class="wrap">
+    <div class="concept-grid">
+      <div class="concept-imgs fade">
+        <div class="img-main"><img src="assets/img/hand_care.jpg" alt="丁寧なフェイシャルトリートメント"></div>
+        <div class="img-sub"><img src="assets/img/herb_peeling.jpg" alt="ハーブピーリング施術"></div>
+      </div>
+      <div class="concept-copy fade">
+        <p class="lead">綺麗は、<br>土台から。</p>
+        <p>AiRiSは、天然素材を使用したお肌にやさしい肌質改善を、エステティシャンと一緒に真摯に目指していくサロンです。</p>
+        <p>ひとりひとりのお肌に最適な施術と日常のケアをご提案し、「肌の調子が良いと気分が上がる」、そんな毎日を送っていただけるようお手伝いします。</p>
+        <a class="more-link" href="about.html">AiRiSについて詳しく</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 選ばれる理由 -->
+<section class="reason-top">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Reason</div>
+      <div class="ja-title">AiRiSが選ばれる理由</div>
+    </div>
+    <div class="reason-cols">
+      <div class="reason-col fade">
+        <div class="ph"><img src="assets/img/counseling.jpg" alt="丁寧なカウンセリング"></div>
+        <span class="no">COUNSELING</span>
+        <h3>ひとりひとりの肌に<br>合わせて組み立てる</h3>
+        <p>肌状態も生活習慣も丁寧にお伺いしたうえで、その日に必要な施術だけをご提案します。無理なご案内はしません。</p>
+      </div>
+      <div class="reason-col fade">
+        <div class="ph"><img src="assets/img/poration.jpg" alt="結果にこだわる施術"></div>
+        <span class="no">QUALITY</span>
+        <h3>良いものを、さらに<br>良いものにしてお届けする</h3>
+        <p>オーナー自身が体験して、効果のあるものだけを。取れた汚れも肌の変化も、その場で目でご確認いただけます。</p>
+      </div>
+      <div class="reason-col fade">
+        <div class="ph"><img src="assets/img/room_wide.jpg" alt="白基調の完全個室"></div>
+        <span class="no">PRIVATE</span>
+        <h3>誰にも気兼ねのいらない<br>完全個室のプライベート空間</h3>
+        <p>ほかのお客様と顔を合わせることはありません。施術後はパウダールームでゆっくりお仕度いただけます。</p>
+      </div>
+    </div>
+    <div class="reason-more fade"><a class="more-link" href="about.html">こだわりをもっと見る</a></div>
+  </div>
+</section>
+
+<!-- メニューダイジェスト -->
+<section class="menu-top">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Menu</div>
+      <div class="ja-title">人気メニュー</div>
+    </div>
+    <div class="menu-cols fade">
+      <a class="menu-col" href="menu.html">
+        <div class="ph"><img src="assets/img/herb_peeling.jpg" alt="REVIハーブピーリング"></div>
+        <h3>REVI肌質改善ハーブピーリング</h3>
+        <div class="price"><span class="tag">初回</span><span class="yen">¥</span>9,500</div>
+        <p>痛み・剥離なし。世界特許取得の再生因子で、ニキビ跡からシミしわまで。</p>
+      </a>
+      <a class="menu-col" href="menu.html">
+        <div class="ph"><img src="assets/img/cleansing.jpg" alt="3STEP毛穴洗浄"></div>
+        <h3>ハイドラフェイシャル</h3>
+        <div class="price"><span class="yen">¥</span>7,000〜</div>
+        <p>長年の頑固な毛穴汚れに。いちご鼻の解消、毛穴レスを目指せます。</p>
+      </a>
+      <a class="menu-col" href="menu.html">
+        <div class="ph"><img src="assets/img/mask_white.jpg" alt="韓国肌うる艶WAX"></div>
+        <h3>韓国肌うる艶WAX</h3>
+        <div class="price"><span class="yen">¥</span>8,500〜</div>
+        <p>憧れの韓国肌に。角質とうぶ毛を除去して、うる艶のお肌へ。</p>
+      </a>
+    </div>
+    <div class="menu-more fade"><a class="more-link" href="menu.html">メニュー・料金を見る</a></div>
+  </div>
+</section>
+
+<!-- ギャラリーマーキー -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <img src="assets/img/pack_pink.jpg" alt="">
+    <img src="assets/img/dresser.jpg" alt="">
+    <img src="assets/img/herb_side.jpg" alt="">
+    <img src="assets/img/powder_room.jpg" alt="">
+    <img src="assets/img/plasma.jpg" alt="">
+    <img src="assets/img/revi.jpg" alt="">
+    <img src="assets/img/mask_white.jpg" alt="">
+    <img src="assets/img/room_wide2.jpg" alt="">
+    <img src="assets/img/pack_pink.jpg" alt="">
+    <img src="assets/img/dresser.jpg" alt="">
+    <img src="assets/img/herb_side.jpg" alt="">
+    <img src="assets/img/powder_room.jpg" alt="">
+    <img src="assets/img/plasma.jpg" alt="">
+    <img src="assets/img/revi.jpg" alt="">
+    <img src="assets/img/mask_white.jpg" alt="">
+    <img src="assets/img/room_wide2.jpg" alt="">
+  </div>
+</div>
+
+<!-- お客様の声 -->
+<section class="voice" id="voice">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Voice</div>
+      <div class="ja-title">お客様の声</div>
+    </div>
+    <div class="voice-inner">
+      <div class="voice-score fade">
+        <div class="num">4.75</div>
+        <div class="stars">★★★★★</div>
+        <div class="cnt">176件の口コミより<br>接客サービス 4.9</div>
+        <div class="src">ホットペッパービューティー<br>2026年7月時点</div>
+      </div>
+      <div class="voice-list">
+        <div class="voice-item fade">
+          <p>毎回毛穴が自分じゃないみたいに綺麗になって大満足です。1ヶ月に1回のペースで通わせていただいています</p>
+          <div class="who">20代・女性 ／ 毛穴洗浄</div>
+        </div>
+        <div class="voice-item fade">
+          <p>肌のトーンが2段階くらい上がって驚きました。取れた汚れを目で見られるので、効果がすごくわかりやすいです</p>
+          <div class="who">20代・女性 ／ ハーブピーリング</div>
+        </div>
+        <div class="voice-item fade">
+          <p>施術中も優しく声をかけていただき、無理な案内もなく安心できました。白基調で清潔感のある空間も素敵です</p>
+          <div class="who">30代・女性 ／ 初回来店</div>
+        </div>
+        <div class="voice-item fade">
+          <p>この価格はすごく良心的でびっくりしました。オプションの強引な勧誘もなく、また来たいと思えるサロンです</p>
+          <div class="who">30代・女性 ／ 1day肌管理</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram -->
+<section class="insta">
+  <div class="wrap fade">
+    <div class="sec-head">
+      <div class="en-title">Instagram</div>
+      <div class="ja-title">日々の施術とお知らせ</div>
+    </div>
+    <div class="handle">@airis_motosumiyoshi</div>
+    <p>施術例やキャンペーンのお知らせを更新しています。ご予約・ご相談はDMからもどうぞ。</p>
+    <div class="insta-grid">
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener"><img src="assets/img/herb_peeling.jpg" alt="Instagram投稿"></a>
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener"><img src="assets/img/room_wide2.jpg" alt="Instagram投稿"></a>
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener"><img src="assets/img/pack_pink.jpg" alt="Instagram投稿"></a>
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener"><img src="assets/img/dresser.jpg" alt="Instagram投稿"></a>
+    </div>
+    <a class="btn-ghost" href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagramをフォローする</a>
+  </div>
+</section>
+
+<!-- アクセス簡易 -->
+<section class="access-top" id="access">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Access</div>
+      <div class="ja-title">アクセス</div>
+    </div>
+    <div class="access-grid">
+      <div class="fade">
+        <table class="info-table">
+          <tr><th>サロン名</th><td>美肌専門店 AiRiS(アイリス)</td></tr>
+          <tr><th>住所</th><td>神奈川県川崎市中原区木月3-22-3<br>やままんアヴェニュー 109号室</td></tr>
+          <tr><th>アクセス</th><td>東急東横線・目黒線「元住吉駅」徒歩3分</td></tr>
+          <tr><th>営業時間</th><td>10:00〜20:00(不定休)</td></tr>
+        </table>
+        <div style="margin-top:32px;"><a class="more-link" href="access.html">道順・サロン情報を詳しく</a></div>
+      </div>
+      <div class="access-map fade">
+        <iframe src="https://maps.google.com/maps?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B7%9D%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%8E%9F%E5%8C%BA%E6%9C%A8%E6%9C%883-22-3&z=16&output=embed" loading="lazy" title="AiRiSの地図"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap fade">
+    <div class="en-title">Reservation</div>
+    <p>ご予約はWEBから24時間受け付けています。<br>お悩み相談はInstagramのDMでもどうぞ。</p>
+    <div class="cta-buttons">
+      <a class="btn-white" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約する</a>
+      <a class="btn-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">LINEで予約・相談</a>
+      <a class="btn-outline-white" href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagram DMで相談</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="AiRiS">
+      <p>美肌専門店 AiRiS(アイリス)<br>
+      神奈川県川崎市中原区木月3-22-3<br>やままんアヴェニュー109号室<br>
+      元住吉駅 徒歩3分／10:00〜20:00(不定休)</p>
+    </div>
+    <div class="footer-col">
+      <h4>MENU</h4>
+      <a href="index.html">ホーム</a>
+      <a href="about.html">AiRiSについて</a>
+      <a href="menu.html">メニュー・料金</a>
+      <a href="guide.html">初めての方へ</a>
+      <a href="access.html">アクセス</a>
+    </div>
+    <div class="footer-col">
+      <h4>RESERVATION</h4>
+      <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約(ホットペッパー)</a>
+      <a class="footer-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">公式LINE</a>
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 美肌専門店 AiRiS All Rights Reserved.</div>
+</footer>
+
+<script>
+/* ---------- イントロアニメーション制御(初回のみ) ---------- */
+(function(){
+  var intro = document.getElementById('airis-intro');
+  if(!intro) return;
+
+  var done = false;
+  try{ done = !!sessionStorage.getItem('airis_intro_done'); }catch(e){}
+  var reduced = false;
+
+  /* 2回目以降・モーション低減設定時は即ファーストビューを表示 */
+  if(done || reduced){
+    intro.style.display = 'none';
+  }else{
+    /* アニメーション(約3秒)終了後にオーバーレイを完全に除去 */
+    setTimeout(function(){ intro.style.display = 'none'; }, 3200);
+  }
+  try{ sessionStorage.setItem('airis_intro_done','1'); }catch(e){}
+})();
+</script>
+<script src="assets/js/main.js"></script>
+  <a class="line-float" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">LINEで予約・相談</a>
+</body>
+</html>

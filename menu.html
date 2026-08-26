@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メニュー・料金｜美肌専門店 AiRiS 元住吉</title>
+<meta name="description" content="美肌専門店AiRiS(アイリス)のメニュー・料金一覧。REVI肌質改善ハーブピーリング、ハイドラフェイシャル毛穴洗浄、韓国肌うる艶WAX、プラズマフェイシャルなど。ご新規様は通常価格から大幅にお得な初回価格でお試しいただけます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600&family=Shippori+Mincho+B1:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* ============================================================
+   料金表 — 価格の数字は必ず Zen Kaku Gothic New + tabular-nums。
+   Cormorant Garamond は数字が古典様式(高さ不揃い)のため価格に使わない。
+   ============================================================ */
+.menu-sec{background:var(--white);}
+.menu-sec.alt{background:var(--cream);}
+
+.lead-block{max-width:720px;margin:0 auto 72px;text-align:center;}
+.lead-block .ttl{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:24px;line-height:1.95;letter-spacing:.1em;margin-bottom:18px;
+}
+.lead-block p{font-size:14px;color:var(--ink-light);line-height:2.1;}
+.lead-block .concerns{
+  font-size:13px;color:var(--ink);letter-spacing:.06em;line-height:2.2;
+  padding:22px 0;margin:6px 0 22px;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+
+/* ---------- 価格表 ---------- */
+.plist{max-width:840px;margin:0 auto;}
+.plist-head{
+  display:flex;align-items:baseline;gap:18px;
+  padding-bottom:16px;margin-bottom:8px;
+  border-bottom:1px solid var(--gold);
+}
+.plist-head .ja{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:20px;letter-spacing:.1em;
+}
+.plist-head .en{
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;letter-spacing:.2em;color:var(--gold);
+}
+.plist-head + .plist-note{
+  font-size:12.5px;color:var(--ink-light);margin:14px 0 4px;
+}
+
+.prow{
+  display:flex;justify-content:space-between;align-items:center;gap:48px;
+  padding:26px 2px;border-bottom:1px solid var(--line);
+}
+.prow:last-child{border-bottom:none;}
+.prow .body{flex:1;min-width:0;}
+.prow .nm{
+  font-family:'Noto Serif JP',serif;
+  font-size:16px;font-weight:500;letter-spacing:.03em;line-height:1.7;
+}
+.prow .tag{
+  display:inline-block;vertical-align:2px;
+  font-size:10.5px;letter-spacing:.1em;color:#fff;background:var(--primary);
+  padding:3px 9px;border-radius:2px;margin-right:10px;font-weight:400;
+}
+.prow .tag.gold{background:var(--gold);}
+.prow .dsc{
+  font-size:12.5px;color:var(--ink-light);line-height:1.95;margin-top:7px;
+}
+/* 価格 — 等幅数字で桁を揃える */
+.prow .amt{
+  flex-shrink:0;text-align:right;
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum" 1;
+}
+.prow .amt .now{
+  font-size:21px;font-weight:500;letter-spacing:.01em;color:var(--ink);
+  white-space:nowrap;line-height:1.3;
+}
+.prow .amt .now .yen{font-size:.68em;margin-right:1px;}
+.prow .amt .now .plus{font-size:.6em;margin-left:2px;color:var(--ink-light);}
+.prow .amt .was{
+  display:block;font-size:11.5px;color:var(--ink-light);
+  text-decoration:line-through;text-decoration-thickness:1px;
+  letter-spacing:.01em;margin-bottom:3px;white-space:nowrap;
+}
+.prow.first .amt .now{color:var(--primary);font-weight:700;}
+.prow .amt .off{
+  display:block;font-size:10.5px;letter-spacing:.06em;color:var(--gold);margin-top:4px;
+}
+
+/* ---------- 写真つきの主役メニュー ---------- */
+.pickup{max-width:900px;margin:0 auto;}
+.pickup-item{
+  display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:center;
+  padding:44px 0;border-bottom:1px solid var(--line);
+}
+.pickup-item:last-child{border-bottom:none;}
+.pickup-item .ph{overflow:hidden;border-radius:2px;}
+.pickup-item .ph img{width:100%;height:200px;object-fit:cover;transition:transform .8s;}
+.pickup-item:hover .ph img{transform:scale(1.05);}
+.pickup-item .en-label{
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;letter-spacing:.24em;color:var(--gold);display:block;margin-bottom:10px;
+}
+.pickup-item h3{
+  font-family:'Shippori Mincho B1',serif;
+  font-size:21px;font-weight:500;letter-spacing:.06em;line-height:1.7;margin-bottom:12px;
+}
+.pickup-item h3 .sub{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  font-size:12.5px;color:var(--ink-light);letter-spacing:.08em;margin-left:12px;
+}
+.pickup-item .quote{
+  font-family:'Noto Serif JP',serif;
+  font-size:14.5px;color:var(--primary);letter-spacing:.06em;
+  margin-bottom:12px;line-height:1.8;
+}
+.pickup-item p{font-size:13.5px;color:var(--ink-light);line-height:2.05;margin-bottom:16px;}
+.pickup-item .amt{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;
+  font-size:20px;font-weight:500;letter-spacing:.01em;
+}
+.pickup-item .amt .yen{font-size:.68em;margin-right:1px;}
+.pickup-item .amt .unit{font-size:.6em;color:var(--ink-light);margin-left:6px;letter-spacing:.06em;}
+
+/* ---------- 注意書き ---------- */
+.notes{
+  max-width:840px;margin:72px auto 0;padding-top:28px;
+  border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-light);line-height:2.2;
+}
+.notes span{display:block;padding-left:1.1em;text-indent:-1.1em;}
+
+@media(max-width:900px){
+  .lead-block{margin-bottom:52px;}
+  .lead-block .ttl{font-size:20px;line-height:1.9;letter-spacing:.06em;}
+  .lead-block .ttl br{display:none;}
+  .lead-block p{font-size:13.5px;}
+  .plist-head{gap:12px;padding-bottom:13px;flex-wrap:wrap;}
+  .plist-head .ja{font-size:18px;}
+  .plist-head .en{font-size:11px;}
+  .prow{
+    display:block;padding:22px 2px;
+  }
+  .prow .nm{font-size:15px;}
+  .prow .tag{font-size:10px;padding:2px 7px;margin-right:8px;}
+  .prow .dsc{font-size:12px;margin-top:6px;}
+  /* スマホは価格を名称の下に右寄せで置く */
+  .prow .amt{
+    display:flex;align-items:baseline;justify-content:flex-end;
+    gap:10px;margin-top:10px;text-align:right;
+  }
+  .prow .amt .was{display:inline;margin:0;font-size:11px;}
+  .prow .amt .now{font-size:19px;}
+  .prow .amt .off{display:inline;margin:0;font-size:10px;}
+  .pickup-item{grid-template-columns:1fr;gap:20px;padding:34px 0;}
+  .pickup-item .ph img{height:46vw;min-height:180px;}
+  .pickup-item h3{font-size:18px;}
+  .pickup-item p{font-size:13px;margin-bottom:12px;}
+  .pickup-item .amt{font-size:18px;}
+  .notes{margin-top:52px;font-size:12px;line-height:2.1;}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo"><img src="assets/img/logo.png" alt="美肌専門店 AiRiS"></a>
+    <nav class="pc-nav">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">AiRiSについて</a>
+      <a href="menu.html" class="current">メニュー・料金</a>
+      <a href="guide.html">初めての方へ</a>
+      <a href="access.html">アクセス</a>
+      <a class="btn-reserve" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">ご予約はこちら</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="sp-nav" id="spNav">
+  <a href="index.html">ホーム</a>
+  <a href="about.html">AiRiSについて</a>
+  <a href="menu.html">メニュー・料金</a>
+  <a href="guide.html">初めての方へ</a>
+  <a href="access.html">アクセス</a>
+  <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">ご予約はこちら</a>
+</nav>
+
+<div class="page-hero" data-en="Menu">
+  <div class="wrap">
+    <div class="en-title">Menu</div>
+    <div class="ja-title">メニュー・料金</div>
+    <div class="breadcrumb"><a href="index.html">ホーム</a><span>/</span>メニュー・料金</div>
+  </div>
+</div>
+
+<!-- 初めての方へ -->
+<section class="menu-sec">
+  <div class="wrap">
+    <div class="lead-block fade">
+      <p class="ttl">様々なお肌悩みに特化した<br>メニューをご用意しています。</p>
+      <p class="concerns">ニキビ ／ ニキビ跡 ／ 毛穴開き ／ たるみ毛穴 ／ いちご鼻 ／ 美白ケア ／ くすみ ／ シミ ／ しわ ／ クレーター ／ アトピー肌 ／ 敏感肌</p>
+      <p>お肌の弱い方もご相談ください。すべてのメニューにカウンセリングとクレンジングが含まれますので、メイクのままご来店いただいて大丈夫です。肌の状態を確認したうえで、その日に必要な施術だけをご提案します。</p>
+    </div>
+
+    <div class="plist fade">
+      <div class="plist-head">
+        <span class="ja">初めての方におすすめ</span>
+        <span class="en">FOR FIRST VISIT</span>
+      </div>
+      <p class="plist-note">ご新規様は、通常価格から大幅にお得な初回価格でお試しいただけます。</p>
+
+      <div class="prow first">
+        <div class="body">
+          <div class="nm"><span class="tag">人気 No.1</span>1day肌管理</div>
+          <p class="dsc">ハーブピーリング ＋ 3STEP毛穴洗浄 ＋ 導入ポレーション。毛穴・くすみ・ざらつきまで一度に整える、AiRiSでいちばん選ばれているコースです。</p>
+        </div>
+        <div class="amt">
+          <span class="now"><span class="yen">¥</span>17,500</span>
+        </div>
+      </div>
+
+      <div class="prow first">
+        <div class="body">
+          <div class="nm"><span class="tag">人気 No.2</span>韓国水光ピール ＋ 3STEP毛穴洗浄 ＋ ヒト幹細胞パック</div>
+          <p class="dsc">毛穴の汚れを落としきったあと、うるおいとハリを重ねて仕上げます。乾燥と毛穴の両方が気になる方に。</p>
+        </div>
+        <div class="amt">
+          <span class="now"><span class="yen">¥</span>13,500</span>
+        </div>
+      </div>
+
+      <div class="prow first">
+        <div class="body">
+          <div class="nm"><span class="tag">人気 No.3</span>基本肌管理</div>
+          <p class="dsc">REVIハーブピーリング ＋ 3STEP毛穴洗浄。AiRiSの土台となる2つの施術を、いちばんお得に体験いただけます。</p>
+        </div>
+        <div class="amt">
+          <span class="was"><span class="yen">¥</span>21,400</span>
+          <span class="now"><span class="yen">¥</span>12,500</span>
+          <span class="off">8,900円お得</span>
+        </div>
+      </div>
+
+      <div class="prow first">
+        <div class="body">
+          <div class="nm"><span class="tag">人気 No.4</span>開き毛穴コース</div>
+          <p class="dsc">WiQo水光ピール ＋ 3STEP毛穴洗浄 ＋ プラズマ ＋ ポレーション。開いた毛穴に4方向からアプローチする、いちばん手厚いコースです。</p>
+        </div>
+        <div class="amt">
+          <span class="now"><span class="yen">¥</span>22,000</span>
+        </div>
+      </div>
+
+      <div class="prow first">
+        <div class="body">
+          <div class="nm"><span class="tag">人気 No.5</span>最強肌管理</div>
+          <p class="dsc">ハーブピーリング ＋ 3STEP毛穴洗浄 ＋ プラズマ ＋ 導入ポレーション。肌の土台づくりを一気に進めたい方へ。</p>
+        </div>
+        <div class="amt">
+          <span class="now"><span class="yen">¥</span>20,500</span>
+        </div>
+      </div>
+
+      <div class="prow first">
+        <div class="body">
+          <div class="nm"><span class="tag gold">迷ったら</span>カウンセリング付き・お試しコース</div>
+          <p class="dsc">肌状態をしっかり確認したうえで、単品・セットの中から最適な施術をご提案します。何を選べばいいかわからない方は、まずこちらから。</p>
+        </div>
+        <div class="amt">
+          <span class="now"><span class="yen">¥</span>7,000<span class="plus">〜</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主役の施術 -->
+<section class="menu-sec alt">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Signature</div>
+      <div class="ja-title">AiRiSの主役メニュー</div>
+    </div>
+    <div class="pickup">
+      <div class="pickup-item fade">
+        <div class="ph"><img src="assets/img/herb_peeling.jpg" alt="REVI肌質改善ハーブピーリング"></div>
+        <div>
+          <span class="en-label">HERB PEELING</span>
+          <h3>REVI肌質改善ハーブピーリング</h3>
+          <p class="quote">&ldquo;芸能人御用達REVIハーブピーリング&rdquo;</p>
+          <p>痛み、剥離なし。日本製で、日本人の肌に最適な低刺激です。世界特許取得の再生因子を配合しており、ニキビ・ニキビ跡・美白・くすみに加えて、徹底したシミしわ改善と究極のアンチエイジングまで。ほかにも肝斑、クレーター改善、ハリツヤ、リフトアップ効果が期待できます。美容液との組み合わせで、あなたに最適なケアをご提案します。</p>
+          <div class="amt"><span class="yen">¥</span>16,400<span class="unit">／ 初回 ¥9,500</span></div>
+        </div>
+      </div>
+
+      <div class="pickup-item fade">
+        <div class="ph"><img src="assets/img/cleansing.jpg" alt="ハイドラフェイシャル 3STEP毛穴洗浄"></div>
+        <div>
+          <span class="en-label">PORE CLEANSING</span>
+          <h3>ハイドラフェイシャル<span class="sub">3STEP毛穴洗浄</span></h3>
+          <p class="quote">&ldquo;長年の頑固な毛穴汚れに&rdquo;</p>
+          <p>温かい水蒸気をスチーマーで当てて毛穴を開くと同時に、特殊な化粧品で角質・皮脂・毛穴汚れを柔らかくして浮かせます。そのうえで粒子の細かい水素水を使ったハイドラフェイシャルで汚れを一掃。いちご鼻の解消、ツヤ肌、毛穴レスを目指せます。仕上げは肌別の美容成分パックで鎮静します。</p>
+          <div class="amt"><span class="yen">¥</span>7,000<span class="unit">〜</span></div>
+        </div>
+      </div>
+
+      <div class="pickup-item fade">
+        <div class="ph"><img src="assets/img/mask_white.jpg" alt="韓国肌うる艶WAX"></div>
+        <div>
+          <span class="en-label">GLOW WAX</span>
+          <h3>韓国肌うる艶WAX</h3>
+          <p class="quote">&ldquo;憧れの韓国肌に&rdquo;</p>
+          <p>角質ケアとうぶ毛の除去で、うる艶のお肌に。産毛がなくなることで、ほこりや汚れの付着による肌荒れを防ぎます。脱毛に通われている方も施術可能で、むしろ相乗効果が期待できます。浸透しやすくなったお肌に、美容成分たっぷりのパックでお仕上げします。</p>
+          <div class="amt"><span class="yen">¥</span>8,500<span class="unit">〜</span></div>
+        </div>
+      </div>
+
+      <div class="pickup-item fade">
+        <div class="ph"><img src="assets/img/plasma.jpg" alt="プラズマフェイシャル"></div>
+        <div>
+          <span class="en-label">PLASMA FACIAL</span>
+          <h3>プラズマフェイシャル</h3>
+          <p class="quote">&ldquo;敏感肌の方にも&rdquo;</p>
+          <p>プラズマの力で肌表面を整えながら、そのあとに入れる美容成分の浸透をサポートします。刺激が少ないため、ゆらぎがちな肌やニキビが気になる肌にも取り入れやすい施術です。エレクトロポレーションとの組み合わせで、肌の深部まで美容液を届けます。</p>
+          <div class="amt"><span class="yen">¥</span>7,800<span class="unit">〜</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お悩み別 -->
+<section class="menu-sec">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">By Concern</div>
+      <div class="ja-title">お悩みから選ぶ</div>
+    </div>
+
+    <div class="plist fade">
+      <div class="plist-head">
+        <span class="ja">毛穴・黒ずみ</span>
+        <span class="en">PORE CARE</span>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">3STEP毛穴洗浄 ＋ 肌別美容成分パック</div>
+          <p class="dsc">洗浄したあとの毛穴に、肌質に合わせた美容成分を届けます。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>7,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">3STEP毛穴洗浄 ＋ プラズマ ＋ エレクトロポレーション</div>
+          <p class="dsc">洗って、整えて、届ける。毛穴ケアの基本を一通り押さえたコースです。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>14,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">WiQo水光ピール ＋ 3STEP毛穴洗浄 ＋ エレクトロポレーション</div>
+          <p class="dsc">毛穴の汚れと乾燥、両方が気になる方に。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>19,000</span></div>
+      </div>
+
+      <div class="plist-head" style="margin-top:56px;">
+        <span class="ja">ニキビ・肌荒れ</span>
+        <span class="en">ACNE CARE</span>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">プラズマフェイシャル ＋ 幹細胞導入</div>
+          <p class="dsc">刺激をおさえながら、荒れがちな肌を整えていきます。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>7,800</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">ハーブピーリング ＋ プラズマフェイシャル</div>
+          <p class="dsc">ターンオーバーを促しながら、肌表面を落ち着かせます。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>11,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">生酵素パウダー × 高濃度ビタミンC ハーブピーリング</div>
+          <p class="dsc">ニキビケアに特化した、AiRiSオリジナルの組み合わせです。</p>
+        </div>
+        <div class="amt">
+          <span class="was"><span class="yen">¥</span>19,700</span>
+          <span class="now"><span class="yen">¥</span>14,500</span>
+        </div>
+      </div>
+
+      <div class="plist-head" style="margin-top:56px;">
+        <span class="ja">シミ・くすみ</span>
+        <span class="en">BRIGHTENING</span>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">シミスポットケア<span style="font-size:12px;color:var(--ink-light);margin-left:8px;">15分</span></div>
+          <p class="dsc">気になる部分にしぼって集中的にアプローチします。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>6,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">シミアプローチコース</div>
+          <p class="dsc">プラズマ ＋ ヒト幹細胞ポレーション。お顔全体のくすみとシミに向き合うコースです。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>16,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">シルク × 高濃度ビタミンC ハーブピーリング</div>
+          <p class="dsc">透明感を引き出す、白玉水光肌のためのハーブピーリングです。</p>
+        </div>
+        <div class="amt">
+          <span class="was"><span class="yen">¥</span>19,700</span>
+          <span class="now"><span class="yen">¥</span>14,500</span>
+        </div>
+      </div>
+
+      <div class="plist-head" style="margin-top:56px;">
+        <span class="ja">ハリ・エイジングケア</span>
+        <span class="en">AGING CARE</span>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">WiQo水光ピール ＋ プラズマ ＋ エレクトロポレーション</div>
+          <p class="dsc">ハリとツヤを取り戻したい方へ。AiRiSのエイジングケアの決定版です。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>18,000</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">W再生因子美容液 ハーブピーリング</div>
+          <p class="dsc">2種類の再生因子を重ねる、いちばん贅沢なハーブピーリングです。</p>
+        </div>
+        <div class="amt">
+          <span class="was"><span class="yen">¥</span>24,650</span>
+          <span class="now"><span class="yen">¥</span>16,500</span>
+        </div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">首・デコルテ ハーブピーリング</div>
+          <p class="dsc">年齢が出やすい首元まで。お顔とあわせてのご利用がおすすめです。</p>
+        </div>
+        <div class="amt">
+          <span class="was"><span class="yen">¥</span>22,400</span>
+          <span class="now"><span class="yen">¥</span>15,500</span>
+        </div>
+      </div>
+
+      <div class="plist-head" style="margin-top:56px;">
+        <span class="ja">ツヤ肌・うぶ毛ケア</span>
+        <span class="en">GLOW &amp; WAX</span>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">韓国肌うる艶WAX ＋ 塗る3D美容パック</div>
+          <p class="dsc">古い角質とうぶ毛を取り除いて、化粧ノリの良いツヤ肌に仕上げます。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>8,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">韓国肌うる艶WAX ＋ 3STEP毛穴洗浄 ＋ 塗る3D美容パック</div>
+          <p class="dsc">大事な予定の前に。肌の明るさが変わったと言っていただけるコースです。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>12,500</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 継続コース -->
+<section class="menu-sec alt">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="en-title">Course</div>
+      <div class="ja-title">続けて変えていく方へ</div>
+    </div>
+    <div class="plist fade">
+      <p class="plist-note" style="text-align:center;margin-bottom:24px;">
+        肌の土台は、一度の施術では変わりません。継続してこそ結果が出るとお考えの方に、コースメニューをご用意しています。もちろん、無理におすすめすることはありません。
+      </p>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">AiRiSオーダーメイド肌管理<span style="font-size:12px;color:var(--ink-light);margin-left:8px;">お試し1回</span></div>
+          <p class="dsc">肌診断をもとに、その日の肌に合わせて内容を組み立てます。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>19,500</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">AiRiSオーダーメイド肌管理<span style="font-size:12px;color:var(--ink-light);margin-left:8px;">育肌コース 3回</span></div>
+          <p class="dsc">ターンオーバーの周期に合わせて、3回かけて肌を育てます。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>52,000</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">AiRiSオーダーメイド肌管理<span style="font-size:12px;color:var(--ink-light);margin-left:8px;">本気で肌改善 5回</span></div>
+          <p class="dsc">しっかり結果を出したい方へ。1回あたり17,000円のご料金です。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>85,000</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">肌荒れ特化・ハーブVCFリキッドプラズマ<span style="font-size:12px;color:var(--ink-light);margin-left:8px;">3回</span></div>
+          <p class="dsc">繰り返す肌荒れに向き合うための、集中ケアコースです。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>46,000</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">肌荒れ特化・ハーブVCFリキッドプラズマ<span style="font-size:12px;color:var(--ink-light);margin-left:8px;">6回</span></div>
+          <p class="dsc">1回あたり12,600円台。長く付き合ってきた肌荒れに。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>76,000</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 限定・その他 -->
+<section class="menu-sec">
+  <div class="wrap">
+    <div class="plist fade">
+      <div class="plist-head">
+        <span class="ja">期間限定・その他</span>
+        <span class="en">LIMITED</span>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm"><span class="tag gold">学割 U24</span>ノーズ3STEP毛穴洗浄</div>
+          <p class="dsc">24歳以下の方限定。小鼻の黒ずみだけを集中的にケアします。学生証をお持ちください。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>4,000</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm"><span class="tag">7月限定</span>2周年記念・ホームケア3点セット付き</div>
+          <p class="dsc">REVIハーブピーリングに、人気のホームケア3点をお付けした2周年記念プランです。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>33,300</span></div>
+      </div>
+      <div class="prow">
+        <div class="body">
+          <div class="nm">エレクトロポレーション ＋ 肌別美容液導入</div>
+          <p class="dsc">肌の深部まで美容液を届けます。単品での追加も承っています。</p>
+        </div>
+        <div class="amt"><span class="now"><span class="yen">¥</span>8,300</span></div>
+      </div>
+    </div>
+
+    <div class="notes fade">
+      <span>※ 表示価格はすべて税込です。</span>
+      <span>※ 初回価格はご新規様が対象です。ご来店が2回目以降の方は通常価格でのご案内となります。</span>
+      <span>※ ここに掲載しているのは主なメニューです。組み合わせやオプションのご相談も承りますので、お気軽にお声がけください。</span>
+      <span>※ 期間限定メニューの内容・価格は変更になる場合があります。最新の情報はご予約ページをご確認ください。</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap fade">
+    <div class="en-title">Reservation</div>
+    <p>メニュー選びに迷ったらご相談ください。<br>お肌に必要な施術だけを正直にお伝えします。</p>
+    <div class="cta-buttons">
+      <a class="btn-white" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約する</a>
+      <a class="btn-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">LINEで予約・相談</a>
+      <a class="btn-outline-white" href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagram DMで相談</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="AiRiS">
+      <p>美肌専門店 AiRiS(アイリス)<br>
+      神奈川県川崎市中原区木月3-22-3<br>やままんアヴェニュー109号室<br>
+      元住吉駅 徒歩3分／10:00〜20:00(不定休)</p>
+    </div>
+    <div class="footer-col">
+      <h4>MENU</h4>
+      <a href="index.html">ホーム</a>
+      <a href="about.html">AiRiSについて</a>
+      <a href="menu.html">メニュー・料金</a>
+      <a href="guide.html">初めての方へ</a>
+      <a href="access.html">アクセス</a>
+    </div>
+    <div class="footer-col">
+      <h4>RESERVATION</h4>
+      <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約(ホットペッパー)</a>
+      <a class="footer-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">公式LINE</a>
+      <a href="https://www.instagram.com/airis_motosumiyoshi/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 美肌専門店 AiRiS All Rights Reserved.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+  <a class="line-float" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">LINEで予約・相談</a>
+</body>
+</html>
