@@ -243,22 +243,22 @@ footer{background:var(--cream);padding:72px 0 36px;}
 
 /* ---------- レスポンシブ ---------- */
 @media(max-width:900px){
-  section{padding:68px 0;}
+  section{padding:50px 0;}
   .wrap,.wrap-wide{padding:0 22px;}
   /* 日本語を文節単位で折り返し、行末に1文字だけ残るのを防ぐ */
   h1,h2,h3,h4,summary,.lead,.ttl,.catch,.hero-catch,.nm{
     word-break:auto-phrase;text-wrap:pretty;
   }
   /* 英字見出しは横幅を超えやすいので縮小 */
-  .sec-head{margin-bottom:40px;}
+  .sec-head{margin-bottom:28px;}
   .sec-head .en-title{font-size:27px;letter-spacing:.1em;}
   .sec-head .ja-title{font-size:13px;letter-spacing:.16em;}
-  .cta{padding:60px 0;}
-  .cta .en-title{font-size:25px;letter-spacing:.1em;margin-bottom:12px;}
-  .cta p{font-size:13px;line-height:2;margin-bottom:30px;word-break:auto-phrase;}
+  .cta{padding:46px 0;}
+  .cta .en-title{font-size:25px;letter-spacing:.1em;margin-bottom:10px;}
+  .cta p{font-size:13px;line-height:1.9;margin-bottom:22px;word-break:auto-phrase;}
   .cta-buttons{flex-direction:column;align-items:center;gap:11px;}
   .cta-buttons a{width:100%;max-width:300px;text-align:center;padding:15px 20px;}
-  .page-hero{padding:132px 0 58px;}
+  .page-hero{padding:112px 0 44px;}
   .page-hero .en-title{font-size:36px;}
   .page-hero .ja-title{font-size:14px;letter-spacing:.18em;}
   .page-hero::before{font-size:110px;bottom:-16px;}
@@ -276,10 +276,10 @@ footer{background:var(--cream);padding:72px 0 36px;}
     display:block;padding:17px 28px;font-size:14px;letter-spacing:.1em;
     border-top:1px solid var(--cream);
   }
-  .media-row{grid-template-columns:1fr;gap:28px;margin-bottom:56px;}
+  .media-row{grid-template-columns:1fr;gap:18px;margin-bottom:38px;}
   .media-row.reverse .media-img{order:0;}
-  .media-img img{height:56vw;min-height:230px;}
-  .media-body h3{font-size:20px;line-height:1.75;margin-bottom:16px;}
+  .media-img img{height:44vw;min-height:170px;}
+  .media-body h3{font-size:20px;line-height:1.75;margin-bottom:12px;}
   .media-body p{font-size:13.5px;}
   /* 情報テーブルは縦積みにして窮屈さを解消 */
   .info-table th,.info-table td{display:block;width:auto;padding:0;border:none;}
@@ -289,14 +289,14 @@ footer{background:var(--cream);padding:72px 0 36px;}
   }
   .info-table td{padding:6px 0 18px;border-bottom:1px solid var(--line);font-size:13.5px;}
   /* フッターはロゴ+住所を上に、リンク2列を下に置いて縦を圧縮 */
-  footer{padding:48px 0 26px;}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px;padding:0 22px;}
+  footer{padding:34px 0 18px;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:20px;padding:0 22px;}
   .footer-brand{grid-column:1 / -1;}
-  .footer-brand img{height:28px;margin-bottom:14px;}
-  .footer-brand p{font-size:12px;line-height:1.95;}
-  .footer-col h4{font-size:13px;letter-spacing:.16em;margin-bottom:10px;}
-  .footer-col a{font-size:12px;padding:5px 0;}
-  .footer-bottom{margin-top:30px;padding-top:18px;font-size:10.5px;}
+  .footer-brand img{height:26px;margin-bottom:9px;}
+  .footer-brand p{font-size:12px;line-height:1.85;}
+  .footer-col h4{font-size:12.5px;letter-spacing:.16em;margin-bottom:7px;}
+  .footer-col a{font-size:12px;padding:3px 0;}
+  .footer-bottom{margin-top:20px;padding-top:13px;font-size:10.5px;}
   .marquee-track{gap:10px;}
   .marquee-track img{height:150px;}
 }

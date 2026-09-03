@@ -63,28 +63,30 @@
   padding:0 8px 30px 46px;font-size:13.5px;color:var(--ink-light);line-height:2.1;
 }
 @media(max-width:900px){
-  .guide-intro .lead{font-size:22px;line-height:1.9;letter-spacing:.06em;margin-bottom:20px;}
-  .guide-intro p{font-size:13.5px;line-height:2.05;}
+  .guide-intro .lead{font-size:22px;line-height:1.85;letter-spacing:.06em;margin-bottom:16px;}
+  .guide-intro p{font-size:13.5px;line-height:1.95;}
   /* 流れは縦線でつないで順序を見せる */
   .flow-steps{position:relative;padding-left:26px;}
   .flow-steps::before{
     content:"";position:absolute;left:3px;top:14px;bottom:14px;
     width:1px;background:var(--primary);opacity:.3;
   }
+  /* 写真を左に添えて横並びにし、4ステップを一望できる高さに収める */
   .flow-step{
-    grid-template-columns:1fr;gap:16px;padding:26px 0;position:relative;
+    grid-template-columns:108px 1fr;gap:15px;padding:20px 0;position:relative;
+    align-items:start;
   }
   .flow-step::before{
-    content:"";position:absolute;left:-27px;top:32px;
+    content:"";position:absolute;left:-27px;top:26px;
     width:7px;height:7px;border-radius:50%;background:var(--primary);
   }
-  .flow-step .ph img{height:42vw;min-height:160px;}
-  .flow-step .step-label{font-size:11px;letter-spacing:.2em;margin-bottom:6px;}
-  .flow-step h3{font-size:17px;margin-bottom:8px;}
-  .flow-step p{font-size:13px;line-height:2;}
+  .flow-step .ph img{height:108px;}
+  .flow-step .step-label{font-size:10px;letter-spacing:.18em;margin-bottom:4px;}
+  .flow-step h3{font-size:16px;margin-bottom:6px;}
+  .flow-step p{font-size:12.5px;line-height:1.85;}
   /* FAQ — 質問は開閉ボタン分の余白を確保し、答えは幅いっぱいに読ませる */
   .faq-item summary{
-    font-size:14.5px;padding:20px 34px 20px 2px;gap:11px;line-height:1.8;
+    font-size:14.5px;padding:16px 34px 16px 2px;gap:11px;line-height:1.75;
   }
   .faq-item summary::before{font-size:17px;}
   .faq-item summary::after{
@@ -242,7 +244,7 @@
 <section class="cta">
   <div class="wrap fade">
     <div class="en-title">Reservation</div>
-    <p>気になることはご予約の前でもご相談ください。<br>InstagramのDMでもお答えしています。</p>
+    <p>気になることはご予約の前でもご相談ください。<br>公式LINEからお答えしています。</p>
     <div class="cta-buttons">
       <a class="btn-white" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約する</a>
       <a class="btn-line" href="https://lin.ee/OLIGNB0" target="_blank" rel="noopener">LINEで予約・相談</a>

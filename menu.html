@@ -134,8 +134,21 @@
 }
 .notes span{display:block;padding-left:1.1em;text-indent:-1.1em;}
 
+/* 悩み別メニューは開閉式。目的のお悩みにすぐ辿り着けるようにする */
+details.cat > summary{list-style:none;cursor:pointer;position:relative;padding-right:34px;}
+details.cat > summary::-webkit-details-marker{display:none;}
+details.cat > summary::after{
+  content:"＋";position:absolute;right:2px;top:50%;transform:translateY(-70%);
+  color:var(--primary);font-size:15px;font-weight:300;transition:opacity .3s;
+}
+details.cat[open] > summary::after{content:"−";}
+@media(min-width:901px){
+  details.cat > summary{cursor:default;padding-right:0;}
+  details.cat > summary::after{display:none;}
+}
+
 @media(max-width:900px){
-  .lead-block{margin-bottom:52px;}
+  .lead-block{margin-bottom:36px;}
   .lead-block .ttl{font-size:20px;line-height:1.9;letter-spacing:.06em;}
   .lead-block .ttl br{display:none;}
   .lead-block p{font-size:13.5px;}
@@ -143,7 +156,7 @@
   .plist-head .ja{font-size:18px;}
   .plist-head .en{font-size:11px;}
   .prow{
-    display:block;padding:22px 2px;
+    display:block;padding:17px 2px;
   }
   .prow .nm{font-size:15px;}
   .prow .tag{font-size:10px;padding:2px 7px;margin-right:8px;}
@@ -156,10 +169,10 @@
   .prow .amt .was{display:inline;margin:0;font-size:11px;}
   .prow .amt .now{font-size:19px;}
   .prow .amt .off{display:inline;margin:0;font-size:10px;}
-  .pickup-item{grid-template-columns:1fr;gap:20px;padding:34px 0;}
-  .pickup-item .ph img{height:46vw;min-height:180px;}
+  .pickup-item{grid-template-columns:1fr;gap:15px;padding:26px 0;}
+  .pickup-item .ph img{height:40vw;min-height:155px;}
   .pickup-item h3{font-size:18px;}
-  .pickup-item p{font-size:13px;margin-bottom:12px;}
+  .pickup-item p{font-size:13px;line-height:1.9;margin-bottom:10px;}
   .pickup-item .amt{font-size:18px;}
   .notes{margin-top:52px;font-size:12px;line-height:2.1;}
 }
@@ -613,6 +626,39 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script>
+/* 悩み別メニューを開閉式に組み替える。スマホは最初のカテゴリのみ開き、PCは全部開いたまま */
+(function(){
+  document.querySelectorAll('.plist').forEach(function(list){
+    var heads = [].slice.call(list.querySelectorAll('.plist-head'));
+    if (heads.length < 2) return;
+    heads.forEach(function(h){
+      var det = document.createElement('details');
+      det.className = 'cat';
+      if (h.style.marginTop) { det.style.marginTop = h.style.marginTop; h.style.marginTop = ''; }
+      var sum = document.createElement('summary');
+      sum.className = 'plist-head';
+      sum.innerHTML = h.innerHTML;
+      det.appendChild(sum);
+      var n = h.nextElementSibling;
+      while (n && !n.classList.contains('plist-head')) {
+        var next = n.nextElementSibling;
+        det.appendChild(n);
+        n = next;
+      }
+      h.parentNode.replaceChild(det, h);
+    });
+  });
+  var mq = window.matchMedia('(max-width:900px)');
+  function sync(){
+    document.querySelectorAll('details.cat').forEach(function(d, i){
+      d.open = mq.matches ? (i === 0) : true;
+    });
+  }
+  sync();
+  if (mq.addEventListener) mq.addEventListener('change', sync);
+})();
+</script>
   <a class="line-float" href="https://lin.ee/OLIGNB0" target="_blank" rel="noopener">LINEで予約・相談</a>
 </body>
 </html>

@@ -258,23 +258,29 @@
   .news-bar .tag{font-size:12px;letter-spacing:.16em;}
   .news-bar a{font-size:12.5px;line-height:1.9;}
   .concept-top::before{font-size:96px;top:14px;}
-  .concept-grid{grid-template-columns:1fr;gap:36px;}
-  .concept-imgs{padding:0 0 38px 30px;}
-  .concept-imgs .img-main img{height:62vw;min-height:250px;}
-  .concept-copy .lead{font-size:22px;line-height:1.95;margin-bottom:20px;}
+  .concept-grid{grid-template-columns:1fr;gap:26px;}
+  .concept-imgs{padding:0 0 30px 30px;}
+  .concept-imgs .img-main img{height:50vw;min-height:195px;}
+  .concept-copy .lead{font-size:22px;line-height:1.9;margin-bottom:16px;}
   .concept-copy .lead br{display:none;}
-  .reason-cols{grid-template-columns:1fr;gap:40px;}
+  /* 選ばれる理由は写真を左に添えた横並びにして、3つを一望できるようにする */
+  .reason-cols{grid-template-columns:1fr;gap:22px;}
   .reason-col:nth-child(2),.reason-col:nth-child(3){margin-top:0;}
-  .reason-col .ph{margin-bottom:18px;}
+  .reason-col{
+    display:grid;grid-template-columns:120px 1fr;
+    column-gap:16px;row-gap:0;align-items:start;
+  }
+  .reason-col .ph{grid-column:1;grid-row:1 / span 3;margin-bottom:0;}
+  .reason-col .no{grid-column:2;grid-row:1;margin-bottom:6px;font-size:12px;}
+  .reason-col h3{grid-column:2;grid-row:2;font-size:16.5px;line-height:1.7;margin-bottom:8px;}
+  .reason-col h3 br{display:none;}
+  .reason-col p{grid-column:2;grid-row:3;font-size:12.5px;line-height:1.9;}
   .reason-col .ph img,
   .reason-col:nth-child(2) .ph img,
-  .reason-col:nth-child(3) .ph img{height:52vw;min-height:200px;}
-  .reason-col h3{font-size:17px;margin-bottom:10px;}
-  .reason-col h3 br{display:none;}
-  .reason-col p{font-size:12.5px;}
-  .reason-more{margin-top:42px;}
+  .reason-col:nth-child(3) .ph img{height:150px;min-height:0;}
+  .reason-more{margin-top:32px;}
   /* 口コミ — 評価を上に置き、声を下に流す */
-  .voice-inner{grid-template-columns:1fr;gap:32px;}
+  .voice-inner{grid-template-columns:1fr;gap:22px;}
   .voice-score{position:static;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;}
   .voice-score .num{font-size:52px;}
   .voice-score .stars{margin:0;font-size:12px;letter-spacing:.24em;}
@@ -284,8 +290,8 @@
     border-top:none;padding-top:0;margin-top:0;width:100%;font-size:10.5px;
   }
   .voice-score .src br{display:none;}
-  .voice-item{padding:24px 0;}
-  .voice-item p{font-size:14px;line-height:2.05;}
+  .voice-item{padding:18px 0;}
+  .voice-item p{font-size:13.5px;line-height:1.9;}
   /* メニューは横スワイプで3枚見せる */
   .menu-cols{
     display:flex;gap:12px;background:none;border:none;
@@ -669,7 +675,7 @@
 <section class="cta">
   <div class="wrap fade">
     <div class="en-title">Reservation</div>
-    <p>ご予約はWEBから24時間受け付けています。<br>お悩み相談はInstagramのDMでもどうぞ。</p>
+    <p>ご予約はWEBから24時間受け付けています。<br>お悩み相談は公式LINEからどうぞ。</p>
     <div class="cta-buttons">
       <a class="btn-white" href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">WEB予約する</a>
       <a class="btn-line" href="https://lin.ee/OLIGNB0" target="_blank" rel="noopener">LINEで予約・相談</a>
