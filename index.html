@@ -103,6 +103,8 @@
 }
 .news-bar a{font-size:13px;color:var(--ink);letter-spacing:.06em;}
 .news-bar a:hover{color:var(--primary);}
+.news-bar .news-items{display:flex;flex-direction:column;gap:8px;min-width:0;}
+.news-bar .news-items a:first-child{color:var(--primary);}
 
 /* ---------- コンセプトダイジェスト ---------- */
 .concept-top{background:var(--white);position:relative;overflow:hidden;}
@@ -409,6 +411,7 @@
   <div class="notice-inner">
     <span class="notice-label">休業のお知らせ</span>
     <span class="notice-text">10月16日(金)〜12月16日(水)は休業いたします。12月17日(木)より通常営業を再開予定です。</span>
+    <a class="notice-link" href="news.html">詳しくはこちら</a>
   </div>
 </div>
 
@@ -494,7 +497,10 @@
 <div class="news-bar">
   <div class="inner fade">
     <span class="tag">NEWS</span>
-    <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">おかげさまで開業2周年を迎えました。いつもご来店ありがとうございます</a>
+    <div class="news-items">
+      <a href="news.html">【重要】休業のお知らせ(10/16〜12/16)。詳細はこちらをご覧ください</a>
+      <a href="https://beauty.hotpepper.jp/kr/slnH000710350/" target="_blank" rel="noopener">おかげさまで開業2周年を迎えました。いつもご来店ありがとうございます</a>
+    </div>
   </div>
 </div>
 
